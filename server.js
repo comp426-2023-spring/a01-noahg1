@@ -30,8 +30,10 @@ fs.readFile('./public/index.html', 'utf8' , (E, data) => {
 		res.writeHead(200, {'Content-Type': 'text/html'});
 		res.end(data); //from fs.readFile
 	})
+
 // Start the `server` const listening on the port defined by argument in your `port` const. 
 // Put the exact message `Server listening on port ${port}` on the console log. 
 	serv.listen(port);
 	console.log('Server listening on port ${port}');
+})
 // That's it! You're all done!
